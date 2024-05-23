@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.contact-info ul,
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-info ul a{
+    text-decoration: none;
+}
+
+.contact-info li,
+.skills li,
+.hobbies li {
+    width: 50%;
+}
+
+.contact-info li {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    .contact-info ul,
+    .skills ul,
+    .hobbies ul {
+        flex-direction: column;
+    }
+
+    .contact-info li,
+    .skills li,
+    .hobbies li {
+        width: 100%;
+    }
+}
